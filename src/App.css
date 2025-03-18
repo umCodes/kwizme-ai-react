@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+
+.custom-after{
+  @apply after:content-[""] after:w-[117%] after:h-[117%] after:rounded-[50%] after:-z-1 after:absolute after:translate-x-[-50%] after:translate-y-[-50%] after:top-[50%] after:left-[50%] after:bg-conic   after:from-purple-800 after:to-sky-600 after:animate-spin ;
+}
