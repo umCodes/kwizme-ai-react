@@ -13,7 +13,7 @@ function Header({iTime}) {
     <div>
         <TimeBar useTime={{timeCount, setTimeCount, iTime}}/>
         <div className="flex justify-between items-center p-4">
-            <Link to="/" className="font-bold text-xl underline">
+            <Link to="/kwizme-ai-react" className="font-bold text-xl underline">
                 <FontAwesomeIcon icon={faList}/> Menu
             </Link>
             <Timer useTime={[timeCount, setTimeCount]}/>

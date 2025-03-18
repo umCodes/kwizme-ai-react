@@ -13,7 +13,7 @@ function App() {
       <QuizProvider>
         <Router>
             <Routes>
-              <Route path="/" element={<Hero />}/>
+              <Route path="/kwizme-ai-react" element={<Hero />}/>
               <Route path="/questions" element={<Questions />}/>
               <Route path='/results' element={<Results/>}/>
             </Routes>

@@ -10,10 +10,16 @@ function ActionButtons() {
     return (
 
     <div className="font-bold text-lg p-4">
-        <Link className="border p-4 m-4 rounded flex items-center gap-4" to='/questions' onClick={() => setTotal(0)}>
+        <Link className="border p-4 m-4 rounded flex items-center gap-4" 
+            to='/questions' 
+            onClick={() => setTotal(0)}
+        >
             <FontAwesomeIcon icon={faRotate}/> Restart 
         </Link>
-        <Link className="border p-4 m-4 rounded flex items-center gap-4" to='/' onClick={() => setTotal(0)} >
+        <Link className="border p-4 m-4 rounded flex items-center gap-4" 
+            to='/kwizme-ai-react' 
+            onClick={() => setTotal(0)}
+        >
             <FontAwesomeIcon icon={faList}/> Menu
         </Link>
     </div>)
