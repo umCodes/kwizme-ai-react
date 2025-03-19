@@ -47,15 +47,23 @@ function DefaultCatg(){
         return <p key={key} onClick={() => assignQuiz(key)}><Link to="/questions"  className="underline text-xl mx-4">{defaultQuiz[key].category}</Link></p> 
     })
 
+    const loadingSkeleton = 
+        <>
+            <p className="bg-gray-600 opacity-20 h-2 m-2 ml-4  animate-pulse rounded"></p>
+            <p className="bg-gray-600 opacity-20 h-2 m-2 ml-4  animate-pulse rounded"></p>
+            <p className="bg-gray-600 opacity-20 h-2 m-2 ml-4  animate-pulse rounded"></p>
+        </>;
 
     
 
     
     return(
         <>
-            <div className="ml-12 mb-12">
+            <div className="ml-12 mb-12 w-fit min-w-[260px]">
                 <h1 className="font-bold text-xl mx-2">Try These:</h1>            
-                {defaultQuizList}
+                {defaultQuizList || loadingSkeleton}   
+                
+                
             </div>
         </>
     )
